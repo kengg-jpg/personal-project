@@ -6,6 +6,7 @@ local weldSettings = { -- C1 ONLY [note] || this is a data table for welds // at
 	["Sheathe"] =  CFrame.new(-2.09984207, 1.00043821, -0.0260119177, -0.0123886019, 7.4505806e-09, -0.9999246, -0.0168127045, 0.999859393, 0.000208067708, 0.999782681, 0.0168139916, -0.0123866275),
 	["Unsheathe"] = CFrame.new( 0, 7.45058071e-10, -0.5, -0.801143944, -0.598472297, 0, 0.598472416, -0.801144004, 7.4505806e-09, -4.45896609e-09, 5.96898753e-09, 1.00000012),
 }
+-- I got these numbers from the studio's command system, modifying the weld one by one then getting its attached CFrame.
 
 local function newWeld(part1, part0, c1, c0) -- katana will be part1 [[ just some notes]] || this is a function for welding // attaching
 	local Weld = Instance.new("Weld", part1)
